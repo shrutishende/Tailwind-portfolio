@@ -8,7 +8,7 @@ function Layout({ children }) {
     return (
         <div>
             <Header />
-            <div className="content font-font2 overflow-y-hidden">
+            <div className="content font-font2 overflow-y-hidden md:overflow-y-scroll">
                 {children}
             </div>
         </div>

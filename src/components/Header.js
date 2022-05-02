@@ -28,7 +28,7 @@ function Header() {
     const pathName = window.location.pathname;
 
     return (
-        <div className="text-black-600 overflow-y-hidden sticky top-0 z-50">
+        <div className="text-black-600  ">
             <div
                 className={`flex bg-indigo-200 justify-between items-center p-2 shadow-lg ${
                     showMenu === "" && "md:flex-col "

@@ -16,7 +16,7 @@ function Contact() {
         emailjs
             .sendForm(
                 "service_00yrv8h",
-                "template_9ae62fx",
+                "template_zd84cwi",
                 refForm.current,
                 "NzuLz_y95bXM5_yJQ"
             )
@@ -59,21 +59,25 @@ function Contact() {
                                 <input
                                     type="text"
                                     placeholder="Name"
+                                    name="Name"
                                     className="w-4/5 border-2 rounded-md border-gray-400 shadow-lg mt-5 md:w-fit md:ml-4 mr-4 "
                                 />
                                 <input
                                     type="email"
                                     placeholder="Email"
+                                    name="Email"
                                     className="w-4/5 border-2 rounded-md border-gray-400 shadow-lg mt-5 md:w-fit md:ml-4 mr-4"
                                 />
                                 <input
                                     type="text"
                                     placeholder="Subject"
+                                    name="Subject"
                                     className="w-4/5 border-2 rounded-md border-gray-400 shadow-lg mt-5 md:w-fit md:ml-4 mr-4"
                                 />
                                 <textarea
                                     type="text"
                                     placeholder="Message"
+                                    name="Subject"
                                     className="w-4/5 border-2 rounded-md border-gray-400 shadow-lg mt-5 md:w-80 md:ml-4 mr-4 "
                                 />
 
