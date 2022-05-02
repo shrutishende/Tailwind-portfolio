@@ -8,8 +8,8 @@ function Home() {
             <div>
                 <div className="h-screen bg-indigo-50">
                     <div className="grid md:grid-cols-1 grid-cols-2 h-screen ">
-                        <div className="font-bold my-52 ml-36 md:mx-20 ">
-                            <h1 className="text-7xl md:text-4xl ">
+                        <div className="font-bold my-52 ml-36 md:mx-20 md:mt-20  ">
+                            <h1 className="text-7xl md:text-4xl">
                                 Hi, I am
                                 <b className="text-rose-500 py-1"> Shruti</b>
                             </h1>
@@ -29,7 +29,7 @@ function Home() {
                             </a>
                         </div>
 
-                        <div className="h-3/4 mt-16 md:-mt-32 ">
+                        <div className="h-3/4 mt-16 md:-mt-32 md:h-full">
                             <lottie-player
                                 src="https://assets6.lottiefiles.com/packages/lf20_t87jfauo.json"
                                 background="transparent"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import {
     FaCss3,
@@ -11,13 +11,17 @@ import {
 import { SiTailwindcss, SiMaterialui } from "react-icons/si";
 
 function About() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <Layout>
             <div>
-                <div className=" h-screen bg-indigo-50">
+                <div className=" bg-indigo-50 h-screen">
                     <div className="grid grid-cols-2 md:grid-cols-1 h-screen">
                         <div className="font-font2 font-bold mt-16 md:mt-10 ">
-                            <h2 className="text-7xl font-font2 font-bold mt-14 ml-32 md:text-4xl">
+                            <h2 className="text-7xl font-font2 font-bold mt-8 ml-32 md:text-4xl md:mt-0">
                                 ABOUT ME
                             </h2>
                             <div className="mx-32 tracking-wider leading-loose py-4 mb-5 md:mx-4">
@@ -57,95 +61,101 @@ function About() {
                             ></lottie-player>
                         </div>
                     </div>
-                </div>
 
-                <div className="bg-indigo-50 h-screen">
-                    <h2 className="text-7xl font-font2 font-bold float-right mr-72 md:text-4xl md:float-none md:text-center md:mr-0">
-                        My Skills
-                    </h2>
+                    <div className="bg-indigo-50 h-screen">
+                        <h2 className="text-7xl font-font2 font-bold float-right mr-72 md:text-4xl md:float-none md:text-center md:mr-0">
+                            My Skills
+                        </h2>
 
-                    {/*-------- ---------- */}
-                    <div className="h-4/6 float-left ml-16 md:hidden">
-                        <lottie-player
-                            src="https://assets10.lottiefiles.com/packages/lf20_toofqbxc.json"
-                            background="transparent"
-                            speed="1"
-                            loop
-                            autoplay
-                        ></lottie-player>
-                    </div>
-
-                    <div className=" py-36 grid grid-cols-4 md:grid-cols-3 md:py-10">
-                        <div className="ml-52 md:ml-0">
-                            <FaHtml5
-                                size={100}
-                                className=" fill-[#F06529] justify-around animate-bounce"
-                            />
-                            <h1 className="font-bold font-font2 ml-7">Html</h1>
+                        {/*-------- ---------- */}
+                        <div className="h-4/6 float-left ml-16 md:hidden">
+                            <lottie-player
+                                src="https://assets10.lottiefiles.com/packages/lf20_toofqbxc.json"
+                                background="transparent"
+                                speed="1"
+                                loop
+                                autoplay
+                            ></lottie-player>
                         </div>
 
-                        <div className="ml-64 md:ml-0">
-                            <FaJsSquare
-                                size={100}
-                                className=" fill-yellow-300  justify-around md:animate-bounce"
-                            />
-                            <h1 className="font-bold font-font2 ml-2">
-                                JavaScript
-                            </h1>
-                        </div>
-                        <div className="ml-80 md:ml-0">
-                            <FaCss3
-                                size={100}
-                                className=" fill-[#28A4D9] justify-around animate-bounce"
-                            />
-                            <h1 className="font-bold font-font2 ml-9">Css</h1>
-                        </div>
-                        <div className="ml-96 md:ml-0 ">
-                            <FaReact
-                                size={100}
-                                className="fill-[#61DBFB] justify-around md:mt-10 md:animate-bounce"
-                            />
-                            <h1 className="font-bold font-font2 ml-5">
-                                ReactJs
-                            </h1>
-                        </div>
+                        <div className=" py-36 grid grid-cols-4 md:grid-cols-3 md:py-10">
+                            <div className="ml-52 md:ml-0">
+                                <FaHtml5
+                                    size={100}
+                                    className=" fill-[#F06529] justify-around animate-bounce"
+                                />
+                                <h1 className="font-bold font-font2 ml-7">
+                                    Html
+                                </h1>
+                            </div>
 
-                        <div className="ml-52 md:ml-0">
-                            <SiTailwindcss
-                                size={100}
-                                className=" fill-[#61DBFB] mt-10 justify-around md:animate-bounce"
-                            />
-                            <h1 className="font-bold font-font2 ml-3">
-                                Tailwind Css
-                            </h1>
-                        </div>
+                            <div className="ml-64 md:ml-0">
+                                <FaJsSquare
+                                    size={100}
+                                    className=" fill-yellow-300  justify-around md:animate-bounce"
+                                />
+                                <h1 className="font-bold font-font2 ml-2">
+                                    JavaScript
+                                </h1>
+                            </div>
+                            <div className="ml-80 md:ml-0">
+                                <FaCss3
+                                    size={100}
+                                    className=" fill-[#28A4D9] justify-around animate-bounce"
+                                />
+                                <h1 className="font-bold font-font2 ml-9">
+                                    Css
+                                </h1>
+                            </div>
+                            <div className="ml-96 md:ml-0 ">
+                                <FaReact
+                                    size={100}
+                                    className="fill-[#61DBFB] justify-around md:mt-10 md:animate-bounce"
+                                />
+                                <h1 className="font-bold font-font2 ml-5">
+                                    ReactJs
+                                </h1>
+                            </div>
 
-                        <div className="ml-64 md:ml-0">
-                            <SiMaterialui
-                                size={100}
-                                className=" fill-[#0f82fe] mt-10 justify-around animate-bounce"
-                            />
-                            <h1 className="font-bold font-font2 ml-2">
-                                Material-UI
-                            </h1>
-                        </div>
+                            <div className="ml-52 md:ml-0">
+                                <SiTailwindcss
+                                    size={100}
+                                    className=" fill-[#61DBFB] mt-10 justify-around md:animate-bounce"
+                                />
+                                <h1 className="font-bold font-font2 ml-3">
+                                    Tailwind Css
+                                </h1>
+                            </div>
 
-                        <div className="ml-80 md:ml-0">
-                            <FaGitAlt
-                                size={100}
-                                className=" fill-[#EC4D28] mt-10 justify-around md:animate-bounce "
-                            />
-                            <h1 className="font-bold font-font2 ml-10">Git</h1>
-                        </div>
+                            <div className="ml-64 md:ml-0">
+                                <SiMaterialui
+                                    size={100}
+                                    className=" fill-[#0f82fe] mt-10 justify-around animate-bounce"
+                                />
+                                <h1 className="font-bold font-font2 ml-2">
+                                    Material-UI
+                                </h1>
+                            </div>
 
-                        <div className="ml-96 md:ml-0">
-                            <FaGithub
-                                size={100}
-                                className=" fill-black mt-10 justify-around animate-bounce"
-                            />
-                            <h1 className="font-bold font-font2 ml-5">
-                                Github
-                            </h1>
+                            <div className="ml-80 md:ml-0">
+                                <FaGitAlt
+                                    size={100}
+                                    className=" fill-[#EC4D28] mt-10 justify-around md:animate-bounce "
+                                />
+                                <h1 className="font-bold font-font2 ml-10">
+                                    Git
+                                </h1>
+                            </div>
+
+                            <div className="ml-96 md:ml-0">
+                                <FaGithub
+                                    size={100}
+                                    className=" fill-black mt-10 justify-around animate-bounce"
+                                />
+                                <h1 className="font-bold font-font2 ml-5">
+                                    Github
+                                </h1>
+                            </div>
                         </div>
                     </div>
                 </div>

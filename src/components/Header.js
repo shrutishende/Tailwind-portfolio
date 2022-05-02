@@ -28,20 +28,22 @@ function Header() {
     const pathName = window.location.pathname;
 
     return (
-        <div className="text-black-600 fixed inset-0 z-50">
+        <div className="text-black-600 overflow-y-hidden sticky top-0 z-50">
             <div
                 className={`flex bg-indigo-200 justify-between items-center p-2 shadow-lg ${
-                    showMenu === "" && "md:flex-col"
+                    showMenu === "" && "md:flex-col "
                 } `}
             >
                 <div className="flex justify-between w-full items-center">
-                    <h1 className="text-4xl font-font1 font-medium mr-2 mt-2">
-                        Shruti Shende
-                    </h1>
+                    <Link to="/">
+                        <h1 className="text-4xl font-font1 font-medium mr-2 mt-2 hover:text-rose-500 cursor-pointer">
+                            Shruti Shende
+                        </h1>
+                    </Link>
 
                     <FaBars
                         onClick={() => {
-                            if (showMenu === "md:hidden") {
+                            if (showMenu === "md:hidden ") {
                                 setShowMenu("");
                             } else {
                                 setShowMenu("md:hidden");
@@ -53,13 +55,13 @@ function Header() {
 
                 {/* Web-View */}
 
-                <div className="flex md:hidden">
+                <div className="flex md:hidden ">
                     {menuItems.map((item) => {
                         return (
                             <li
-                                className={`list-none mx-5 font-font2-300 p-1 ${
+                                className={`list-none mx-5 font-font2-300 p-1${
                                     item.key === pathName &&
-                                    " bg-indigo-100 text-black rounded-md"
+                                    " bg-indigo-100 text-black rounded-md "
                                 }`}
                             >
                                 <Link to={`${item.key}`}>{item.title}</Link>
@@ -71,14 +73,14 @@ function Header() {
                 {/* Mobile-View */}
 
                 <div
-                    className={`mt-4 md:flex items-center flex-col lg:hidden 2xl:hidden xl:hidden ${showMenu}`}
+                    className={`mt-4 md:flex items-center flex-col lg:hidden 2xl:hidden xl:hidden${showMenu}`}
                 >
                     {menuItems.map((item) => {
                         return (
                             <li
                                 className={`list-none font-font2-300 py-1  ${
                                     item.key === pathName &&
-                                    " bg-indigo-100 text-black rounded-md px-4"
+                                    " bg-indigo-100 text-black rounded-md px-4 "
                                 }`}
                             >
                                 <Link to={`${item.key}`}>{item.title}</Link>
