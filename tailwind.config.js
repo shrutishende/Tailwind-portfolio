@@ -13,6 +13,8 @@ module.exports = {
         },
 
         screens: {
+            "3xl": { max: "2000px" },
+
             "2xl": { max: "1600px" },
             // => @media (max-width: 1535px) { ... }
 

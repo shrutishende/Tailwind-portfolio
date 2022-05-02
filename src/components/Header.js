@@ -49,13 +49,13 @@ function Header() {
                                 setShowMenu("md:hidden");
                             }
                         }}
-                        className="lg:hidden xl:hidden 2xl:hidden md:flex cursor-pointer"
+                        className="lg:hidden xl:hidden 2xl:hidden 3xl:hidden md:flex cursor-pointer"
                     />
                 </div>
 
                 {/* Web-View */}
 
-                <div className="flex md:hidden ">
+                <div className="flex md:hidden  ">
                     {menuItems.map((item) => {
                         return (
                             <li
@@ -73,7 +73,7 @@ function Header() {
                 {/* Mobile-View */}
 
                 <div
-                    className={`mt-4 md:flex items-center flex-col lg:hidden 2xl:hidden xl:hidden ${showMenu}`}
+                    className={`mt-4 md:flex items-center flex-col lg:hidden 2xl:hidden xl:hidden 3xl:hidden ${showMenu}`}
                 >
                     {menuItems.map((item) => {
                         return (
