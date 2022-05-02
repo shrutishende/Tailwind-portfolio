@@ -43,7 +43,7 @@ function Header() {
 
                     <FaBars
                         onClick={() => {
-                            if (showMenu === "md:hidden ") {
+                            if (showMenu === "md:hidden") {
                                 setShowMenu("");
                             } else {
                                 setShowMenu("md:hidden");
@@ -73,7 +73,7 @@ function Header() {
                 {/* Mobile-View */}
 
                 <div
-                    className={`mt-4 md:flex items-center flex-col lg:hidden 2xl:hidden xl:hidden${showMenu}`}
+                    className={`mt-4 md:flex items-center flex-col lg:hidden 2xl:hidden xl:hidden ${showMenu}`}
                 >
                     {menuItems.map((item) => {
                         return (
