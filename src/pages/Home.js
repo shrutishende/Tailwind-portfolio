@@ -2,11 +2,13 @@ import React from "react";
 
 import Layout from "../components/Layout";
 
+// background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+
 function Home() {
     return (
         <Layout>
             <div>
-                <div className="h-screen bg-indigo-50">
+                <div className="h-screen bg-gradient-to-r from-[#ddd6fe] to-[#f3e8ff]">
                     <div className="grid md:grid-cols-1 grid-cols-2 h-screen ">
                         <div className="font-bold my-52 ml-36 md:mx-20 md:mt-20  ">
                             <h1 className="text-7xl md:text-4xl">

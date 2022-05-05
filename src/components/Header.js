@@ -30,7 +30,7 @@ function Header() {
     return (
         <div className="text-black-600  ">
             <div
-                className={`flex bg-indigo-200 justify-between items-center p-2 shadow-lg ${
+                className={`flex bg-indigo-300 justify-between items-center p-2 shadow-lg ${
                     showMenu === "" && "md:flex-col "
                 } `}
             >
