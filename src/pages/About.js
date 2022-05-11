@@ -44,7 +44,8 @@ function About() {
                                 </p>
                             </div>
                             <a
-                                href="/"
+                                href="images/resume1.png"
+                                target="_blank"
                                 className="py-2.5 px-5 ml-32 mb-2 mt-16 font-semibold text-gray-900 focus:outline-none bg-indigo-200 rounded-lg border border-gray-500 hover:bg-indigo-50 hover:text-indigo-900  focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:text-white "
                             >
                                 SEE MY RESUME
