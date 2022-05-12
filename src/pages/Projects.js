@@ -31,9 +31,45 @@ function Projects() {
                             {/*--------------------------- projects Start--------------------------------- */}
                             <div>
                                 <img
+                                    src="images/mobile-app.png"
+                                    alt="img"
+                                    className="w-full  h-52 border-4 border-gray-600 transition hover:scale-110"
+                                />
+
+                                <h1 className="text-1xl font-semibold my-2">
+                                    E-commerce Website (ReactJs, Bootstrap,
+                                    Redux)
+                                </h1>
+
+                                <div className="flex flex-row gap-2">
+                                    <a
+                                        href="https://mobile-ecommerce-app.vercel.app/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <button
+                                            type="button"
+                                            className="bg-indigo-200 px-2 border-2 rounded border-gray-700  cursor-pointer"
+                                        >
+                                            Demo
+                                        </button>
+                                    </a>
+                                    <a
+                                        href="https://github.com/shrutishende/mobile-ecommerce-app"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <FaGithub size={30} className="" />
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/*--------------------------- projects Start--------------------------------- */}
+                            <div>
+                                <img
                                     src="images/disney+.png"
                                     alt="img"
-                                    className="w-full  h-52 border-4 border-gray-600"
+                                    className="w-full  h-52 border-4 border-gray-600 transition hover:scale-110"
                                 />
 
                                 <h1 className="text-1xl font-semibold my-2">
@@ -70,7 +106,7 @@ function Projects() {
                                 <img
                                     src="images/slack.png"
                                     alt="img"
-                                    className="w-full  h-52 border-4 border-gray-600"
+                                    className="w-full  h-52 border-4 border-gray-600 transition hover:scale-110"
                                 />
 
                                 <h1 className="text-1xl font-semibold my-2">
@@ -107,7 +143,7 @@ function Projects() {
                                 <img
                                     src="images/e_commerce.png"
                                     alt="img"
-                                    className="w-full h-52 border-4 border-gray-600 "
+                                    className="w-full h-52 border-4 border-gray-600 transition hover:scale-110"
                                 />
 
                                 <h1 className="text-1xl font-semibold my-2">
@@ -140,7 +176,7 @@ function Projects() {
                             <div>
                                 <img
                                     src="images/javaScrpt-portfolio.png"
-                                    className="w-full  h-52 border-4 border-gray-600"
+                                    className="w-full  h-52 border-4 border-gray-600 transition hover:scale-110"
                                     alt="img"
                                 />
 
