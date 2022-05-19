@@ -77,7 +77,7 @@ function Contact() {
                                 <textarea
                                     type="text"
                                     placeholder="Message"
-                                    name="Subject"
+                                    name="message"
                                     className="w-4/5 border-2 rounded-md border-gray-400 shadow-lg mt-5 md:w-80 md:ml-4 mr-4 "
                                 />
 
