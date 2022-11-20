@@ -7,8 +7,7 @@ import Contact from "./pages/Contact";
 
 function App() {
     return (
-        <>        <meta name="google-site-verification" content="c5VMfKjrvN8lx5XR_YZxQJghIi4zgImMqGBz67A5ndE" />
-        <div className="App">
+                      <div className="App">
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -19,7 +18,7 @@ function App() {
                 </Routes>
             </BrowserRouter>
             </div>
-            </>
+            
 
     );
 }
